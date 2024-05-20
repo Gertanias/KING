@@ -1,0 +1,93 @@
+
+
+
+.info1 {
+	margin: 35px 40px 20px 40px;
+	padding: 10px;
+	width: 45%
+}
+
+
+
+.info {
+	margin: 40px 40px 20px 40px;
+	padding:10px;
+}
+
+p{ color: black;
+	font-size: 30px;
+	text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+	text-align:justify ;
+	}
+
+h1{ color: black; 
+     font-size: 48px;
+	 font-weight: bold;
+	 text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+   }	 
+   
+h2{ color: black; 
+     font-size: 36px;
+	 font-weight: bolder;
+	 text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+   }	 
+h3{ font-size: 28px;
+    color: black;
+   }
+
+.info2 {margin: 50px 50px 30px 10px
+}
+
+.hidden {
+	display: none; 
+     }
+
+
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Bilbo+Swash+Caps&display=swap');
+
+@font-face {
+  font-family: Morris;
+  src: url(https://cdn.statically.io/gh/EmmesCodes/Tipografias/dae9f5bb/MorrisInitials.ttf);
+  }
+
+:root {
+  --fontSize: calc((1vw + 1vh) * .75);
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+  font: var(--fontSize)/200% 'Bilbo Swash Caps', cursive;
+  background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613307286_147-p-sinii-kirpichnii-fon-247.jpg);
+  background-size: cover;
+}
+
+main {
+  postion: relative;
+  width: 100%;
+  height: auto;
+}
+
+ #parchment {
+    padding: 20px;
+    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    background: #fffef0;
+  filter: url(#wavy2);
+}
+
+
+<div id="parchment"></div>
+<svg>
+  <filter id="wavy2">
+    <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="20" />
+  </filter>
+</svg>
